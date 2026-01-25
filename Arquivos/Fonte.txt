@@ -1,2 +1,0 @@
-"Special Gothic Expanded One", sans-serif
-  font-family: "Noto Sans Caucasian Albanian", sans-serif;
