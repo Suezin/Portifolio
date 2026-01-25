@@ -1,0 +1,153 @@
+.servicos {
+    margin-top: 13em;
+    height: 36em;
+}
+
+.servicos-container>div>h3 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin-left: 1em;
+}
+
+.servicos>h1 {
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.servicos-container {
+    display: flex;
+    min-height: 25em;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 3em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.web, .back-end-section, .Hardware {
+    border-radius: 1em;
+    width: 30%;
+    min-width: 250px;
+    min-height: 15em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4),
+        5px 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.25s all ease-in-out;
+}
+
+.web:hover, .back-end-section:hover, .Hardware:hover {
+    transform: scale3d(1.03,1.03,1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4),
+        10px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.web>img, .back-end-section>img, .Hardware>img {
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.web>p, .back-end-section>p, .Hardware>p {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: start;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .servicos-container {
+        gap: 1.5em;
+    }
+    
+    .web, .back-end-section, .Hardware {
+        width: 28%;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .servicos {
+        margin-top: 10em;
+        height: auto;
+        padding-bottom: 3em;
+    }
+    
+    .servicos-container {
+        flex-direction: column;
+        height: auto;
+        gap: 2em;
+        align-items: center;
+    }
+    
+    .web, .back-end-section, .Hardware {
+        width: 90%;
+        max-width: 30em;
+        height: auto;
+        min-height: 15em;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        margin-top: 8em;
+        padding: 1em;
+    }
+    
+    .servicos>h1 {
+        font-size: 1.8em;
+    }
+    
+    .servicos-container {
+        gap: 1.5em;
+        margin-top: 2em;
+    }
+    
+    .web, .back-end-section, .Hardware {
+        width: 95%;
+        min-height: 14em;
+    }
+    
+    .servicos-container>div>h3 {
+        font-size: 1.1em;
+    }
+    
+    .web>p, .back-end-section>p, .Hardware>p {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos {
+        margin-top: 6em;
+        padding: 0.5em;
+    }
+    
+    .servicos>h1 {
+        font-size: 1.5em;
+    }
+    
+    .servicos-container {
+        gap: 1em;
+        margin-top: 1.5em;
+    }
+    
+    .web, .back-end-section, .Hardware {
+        width: 100%;
+        min-height: 12em;
+    }
+    
+    .servicos-container>div>h3 {
+        font-size: 1em;
+    }
+    
+    .web>p, .back-end-section>p, .Hardware>p {
+        font-size: 0.7em;
+    }
+    
+    .web>img, .back-end-section>img, .Hardware>img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}

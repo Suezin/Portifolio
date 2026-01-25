@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    scroll-margin-top: 70px;
+    padding: 2em 5%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries Gerais */
+@media (max-width: 1024px) {
+    section {
+        scroll-margin-top: 65px;
+        padding: 2em 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px;
+        padding: 1.5em 3%;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        scroll-margin-top: 55px;
+        padding: 1em 2%;
+    }
+}

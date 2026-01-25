@@ -1,0 +1,187 @@
+.sobre {
+    margin-top: 15em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.info>h3 {
+    font-weight: 500;
+    font-size: 1.3em;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.info>p {
+    font-family:"Noto Sans Caucasian Albanian", sans-serif;
+    font-size: 0.9em;
+}
+
+.info {
+    margin-left: 5em;
+    margin-bottom: 3em;
+}
+
+.info>h1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 500;
+}
+
+.fotoProg {
+    margin-left: 5em;
+    width: 20em;
+    height: 32em;
+    border-radius: 2em;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4),
+        0 5px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+.habilidades>h4 {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 15%;
+    border-radius: 1em;
+    height: 1.5em;
+    text-align: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+    margin-right: 2em;
+}
+
+.habilidades>h4:hover {
+    background-color: #c9b59cb9;
+    cursor: pointer;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.container-sobre {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .sobre {
+        gap: 2em;
+    }
+    
+    .fotoProg {
+        margin-left: 3em;
+        width: 18em;
+        height: 28em;
+    }
+    
+    .info {
+        margin-left: 3em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10em;
+        padding: 2em;
+    }
+    
+    .fotoProg {
+        width: 18em;
+        height: 28em;
+        margin: 0 auto 2em;
+    }
+    
+    .container-sobre {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .info {
+        margin-left: 0;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+    
+    .habilidades {
+        justify-content: center;
+    }
+    
+    .habilidades>h4 {
+        width: auto;
+        min-width: 100px;
+        padding: 0.5em 1em;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        margin-top: 8em;
+        padding: 1em;
+    }
+    
+    .fotoProg {
+        width: 16em;
+        height: 24em;
+        margin-bottom: 1.5em;
+    }
+    
+    .info>h1 {
+        font-size: 1.8em;
+    }
+    
+    .info>h3 {
+        font-size: 1.1em;
+    }
+    
+    .info>p {
+        font-size: 0.85em;
+    }
+    
+    .habilidades>h4 {
+        font-size: 0.9em;
+        min-width: 80px;
+        padding: 0.4em 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        margin-top: 6em;
+        padding: 0.5em;
+    }
+    
+    .fotoProg {
+        width: 14em;
+        height: 20em;
+        margin-bottom: 1em;
+    }
+    
+    .info>h1 {
+        font-size: 1.5em;
+    }
+    
+    .info>h3 {
+        font-size: 1em;
+    }
+    
+    .info>p {
+        font-size: 0.8em;
+    }
+    
+    .habilidades {
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+    }
+    
+    .habilidades>h4 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.3em;
+    }
+}

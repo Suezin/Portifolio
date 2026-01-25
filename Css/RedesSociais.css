@@ -1,0 +1,37 @@
+.redes-sociais {
+    margin-top: 1.5em;
+}
+
+.redes-sociais>p {
+    color: rgba(0,0,0,0.7);
+    font-weight: 700;
+}
+
+.github-img, .linkedin-img {
+    width: 2em;
+    height: 2em;
+    transition: 0.2s ease-in-out;
+    margin-right: 0.5em;
+}
+
+.github-img:hover, .linkedin-img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .redes-sociais {
+        text-align: center;
+    }
+    
+    .redes-sociais>p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .github-img, .linkedin-img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}

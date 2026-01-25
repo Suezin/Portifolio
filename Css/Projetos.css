@@ -1,0 +1,180 @@
+.projetos {
+    margin-top: 6em;
+    height: 40em;
+}
+
+.projetos>h1 {
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.projetos>p {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.card-Projeto>img {
+    height: 14em;
+    width: 95%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 2em;
+}
+
+.card-Projeto {
+    width: 21em;
+    max-width: 100%;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4),
+        5px 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.25s all ease-in-out;
+}
+
+.card-Projeto:hover {
+    transform: scale3d(1.03, 1.03, 1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4),
+        10px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-Projeto>h3 {
+    margin-left: 0.9em;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 1em;
+}
+
+.card-Projeto>p {
+    text-align: justify;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 0.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.container-Projetos {
+    min-height: 25em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card-Projeto>a {
+    text-decoration: none;
+    margin-left: 1em;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 0.7em;
+    color: black;
+}
+
+.acesso-direto {
+    height: 1em;
+    width: 1em;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .container-Projetos {
+        gap: 1.5em;
+    }
+    
+    .card-Projeto {
+        width: 20em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projetos {
+        margin-top: 5em;
+        height: auto;
+        padding-bottom: 3em;
+    }
+    
+    .container-Projetos {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2em;
+    }
+    
+    .card-Projeto {
+        width: 90%;
+        max-width: 25em;
+    }
+}
+
+@media (max-width: 768px) {
+    .projetos {
+        margin-top: 4em;
+        padding: 1em;
+    }
+    
+    .projetos>h1 {
+        font-size: 1.8em;
+    }
+    
+    .projetos>p {
+        font-size: 0.85em;
+    }
+    
+    .container-Projetos {
+        gap: 1.5em;
+        margin-top: 1.5em;
+    }
+    
+    .card-Projeto {
+        width: 95%;
+    }
+    
+    .card-Projeto>h3 {
+        font-size: 0.95em;
+    }
+    
+    .card-Projeto>p {
+        font-size: 0.75em;
+    }
+    
+    .card-Projeto>a {
+        font-size: 0.65em;
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos {
+        margin-top: 3em;
+        padding: 0.5em;
+    }
+    
+    .projetos>h1 {
+        font-size: 1.5em;
+    }
+    
+    .projetos>p {
+        font-size: 0.75em;
+    }
+    
+    .container-Projetos {
+        gap: 1em;
+        margin-top: 1em;
+    }
+    
+    .card-Projeto>img {
+        height: 12em;
+    }
+    
+    .card-Projeto>h3 {
+        font-size: 0.9em;
+    }
+    
+    .card-Projeto>p {
+        font-size: 0.7em;
+    }
+    
+    .card-Projeto>a {
+        font-size: 0.6em;
+    }
+}
