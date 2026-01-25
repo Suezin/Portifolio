@@ -1,0 +1,252 @@
+.inicio {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content-inicio>p {
+    margin-top: 2em;
+    font-size: 1em;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.botao-curriculo>button {
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 7em;
+    height: 2.3em;
+    border-radius: 1em;
+    border: 1px solid;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botao-curriculo>button>img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.botao-curriculo>button:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+    transform: scale(1.07);
+}
+
+.escrita {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: black;
+    padding: 0.4em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.escrita::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+.fotoUsu {
+    width: 25em;
+    height: 32em;
+    border-radius: 2em;
+    margin-right: 4em;
+    margin-left: 10em;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4),
+        0 5px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+.content-inicio {
+    padding-left: 10em;
+}
+
+.content-inicio>h1 {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha-redes {
+    border: none;
+    margin: 1em 0;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+}
+
+.redes-sociais {
+    margin-top: 1.5em;
+}
+
+.redes-sociais>p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.github-img {
+    width: 2em;
+    height: 2em;
+    transition: 0.2s ease-in-out;
+}
+
+.github-img:hover {
+    transform: scale(1.2);
+}
+
+.linkedin-img {
+    width: 2em;
+    height: 2em;
+    transition: 0.2s ease-in-out;
+}
+
+.linkedin-img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .content-inicio {
+        padding-left: 5em;
+    }
+    
+    .fotoUsu {
+        margin-left: 5em;
+        margin-right: 2em;
+        width: 22em;
+        height: 28em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6em;
+    }
+    
+    .content-inicio {
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .content-inicio>h1 {
+        font-size: 2.5em;
+    }
+    
+    .fotoUsu {
+        width: 20em;
+        height: 26em;
+        margin: 2em auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .botao-curriculo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .linha-redes {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio {
+        margin-top: 5em;
+        padding: 1em;
+    }
+    
+    .content-inicio {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .content-inicio>h1 {
+        font-size: 2em;
+    }
+    
+    .escrita {
+        font-size: 1.2em;
+    }
+    
+    .content-inicio>p {
+        font-size: 0.9em;
+    }
+    
+    .fotoUsu {
+        width: 18em;
+        height: 24em;
+        margin: 1.5em auto;
+    }
+    
+    .botao-curriculo>button {
+        font-size: 1.2em;
+        width: 6em;
+        height: 2em;
+    }
+    
+    .linha-redes {
+        width: 90%;
+        margin: 1em auto;
+    }
+    
+    .redes-sociais {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio {
+        margin-top: 4em;
+        padding: 0.5em;
+    }
+    
+    .content-inicio>h1 {
+        font-size: 1.5em;
+    }
+    
+    .escrita {
+        font-size: 1em;
+    }
+    
+    .content-inicio>p {
+        font-size: 0.8em;
+    }
+    
+    .fotoUsu {
+        width: 15em;
+        height: 20em;
+        margin: 1em auto;
+    }
+    
+    .botao-curriculo>button {
+        font-size: 1em;
+        width: 5.5em;
+        height: 1.8em;
+    }
+    
+    .github-img,
+    .linkedin-img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    .redes-sociais>p {
+        font-size: 0.9em;
+    }
+}
