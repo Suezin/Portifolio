@@ -44,4 +44,4 @@ cd seu-repositorio
 
 ## Contato
 
-- E-mail: matheusbaumhardt654@exemplo.com
+- E-mail: matheusbaumhardt654@gmail.com
