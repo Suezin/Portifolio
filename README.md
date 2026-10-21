@@ -1,6 +1,6 @@
-# Portfólio de [Seu Nome]
+# Portfólio de Suezin
 
-Este é o meu site de portfólio, feito com HTML e CSS. Aqui eu reúno as minhas habilidades, os meus estudos e os projetos que já desenvolvi. Se quiser ver o site no ar, [clique aqui](link-do-site).
+Este é o meu site de portfólio, feito com HTML e CSS. Aqui eu reúno as minhas habilidades, os meus estudos e os projetos que já desenvolvi.
 
 ## Componentes
 
@@ -8,7 +8,7 @@ Este é o meu site de portfólio, feito com HTML e CSS. Aqui eu reúno as minhas
 - Uma apresentação sobre mim: quem eu sou, onde moro e o que busco na área de tecnologia.
 
 **Habilidades**
-- Java (POO, JDBC), MySQL, HTML, CSS, Excel, hardware e sistemas operacionais.
+- Java (POO, JDBC), MySQL, HTML, CSS, JS, hardware e sistemas operacionais.
 
 **Estudos**
 - Minha formação (técnico em Informática e técnico em Administração) e o que estou aprendendo no momento, como estruturas de dados em Java.
